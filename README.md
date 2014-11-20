@@ -4,6 +4,8 @@ Script for send data to wordpress and see it as post.
 You follow the installation steps
 **useful for creating automated post**
 
+![img formulario put data](http://i60.tinypic.com/294hzc9.png)
+
 
 How to Install step and step
 
