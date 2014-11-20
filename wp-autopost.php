@@ -10,7 +10,7 @@ Plugin URI: #
 Description: TThis plugin created posts  file callback 
 Author: Anibal Copitan
 Version: 1.0
-Author URI: http://acopitan.blospot.com/
+Author URI: http://acopitan.blogspot.com/
 */
 
 
