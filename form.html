@@ -1,0 +1,137 @@
+﻿<html>
+<head>
+    <meta charset='utf-8'>
+    <title>form</title>
+</head>
+<body>
+    <center>
+    Hoy es: <b>
+<font color="#FF0000">
+<script>
+var d=new Date();
+var weekday=new Array("Domingo","Lunes","Martes","Miercoles","Jueves","Viernes ","Sábado");
+var monthname=new Array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+document.write(weekday[d.getDay()] + " ");
+document.write(d.getDate() + ". ");
+document.write(monthname[d.getMonth()] + " ");
+document.write(d.getFullYear());
+</script>Jueves 20. Noviembre 2014
+</font>
+</b>
+
+<h3>Amistosos</h3>
+<p><b><font color="#0000FF">Notas: AMISTOSOS 2014</font></b></p>
+<form id="alemania" name="form1" method="post" action="http://localhost/sites/wordpress/wp-autopost.php">
+    <table border="1px" style="font-family: Arial " bordercolor="#ccc" cellspacing="0" cellpadding="0">
+ 
+    <tbody><tr><th>DIA - FECHA</th><th>MES Y AÑO</th><th>HORA - MINUTOS</th></tr>
+
+    <tr><td> <select name="dia">  <!-- DIA -->
+<option></option>
+<option value="lunes">Lunes</option>
+<option value="martes">Martes</option>
+<option value="miércoles">Miércoles</option>
+<option value="jueves">Jueves</option>
+<option value="viernes">Viernes</option>
+<option value="sábado">Sábado</option>
+<option value="domingo">Domingo</option>
+
+</select> 
+    <select name="fecha"> <!-- FECHA -->
+    <option></option> <!-- Primera opción es en blanco -->
+        <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option><option>21</option><option>22</option><option>23</option><option>24</option><option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option><option>31</option> 
+</select> </td>  
+      
+    <td>
+<select name="mes"> <!-- MES -->
+<option></option>
+<option value="enero">Enero</option>
+<option value="febrero">Febrero</option>
+<option value="marzo">Marzo</option>
+<option value="abril">Abril</option>
+<option value="mayo">Mayo</option>
+<option value="junio">Junio</option>
+<option value="julio">Julio</option>
+<option value="agosto">Agosto</option>
+<option value="septiembre">Septiembre</option>
+<option value="octubre">Octubre</option>
+<option value="noviembre">Noviembre</option>
+<option value="diciembre">Diciembre</option>
+</select>
+   
+      
+  <select name="anio">  <!-- AÑO -->
+    <option></option> <!-- Primera opción es en blanco -->
+        <option>2014</option><option>2015</option><option>2016</option><option>2017</option><option>2018</option><option>2019</option><option>2020</option> 
+</select>
+            </td>
+ 
+        <td>
+        <select name="hora">   <!-- HORA -->
+<option></option>
+<option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option><option>21</option><option>22</option><option>23</option><option>24</option></select>
+        <input type="text" name="minutos" size="10"><br>
+    </td>
+    
+    
+    <!--INICIO-->
+      </tr><tr><th>EQUIPO A</th><th>ESTADIO</th><th>EQUIPO B</th>   
+   
+</tr><tr><td>   
+<select name="equipo_a" size="15"> <!-- EQUIPO A -->
+<option>------------</option>
+<option value=" Argentina">Argentina</option>
+<option value=" Bolivia">Bolivia</option>
+<option value=" Ecuador">Ecuador</option>
+<option value=" Brasil">Brasil</option>
+<option value=" Perú">Perú</option>
+<option value=" Paraguay">Paraguay</option>
+<option value=" Uruguay">Uruguay</option>
+<option value=" Venezuela">Venezuela</option>
+</select>
+</td>
+
+<td>
+    
+    <input type="text" name="estadio" size="20"><br>
+    
+</td>
+
+
+<td>   
+<select name="equipo_b" size="15"> <!-- EQUIPO B -->
+<option>------------</option>
+
+<option value=" Argentina">Argentina</option>
+<option value=" Bolivia">Bolivia</option>
+<option value=" Ecuador">Ecuador</option>
+<option value=" Brasil">Brasil</option>
+<option value=" Peru">Peru</option>
+<option value=" Paraguay">Paraguay</option>
+<option value=" Uruguay">Uruguay</option>
+<option value=" Venezuela">Venezuela</option>
+
+</select>
+</td></tr>
+
+      <!-- FIN -->
+      
+
+
+        <tr>
+            <td colspan="3">
+                <center>
+                    <input type="submit" name="btnenviar" value="Enviar">
+                    <input type="reset" name="btnlimpiar" value="Limpiar">
+                </center>
+            </td>
+        </tr>
+
+    </tbody></table>
+
+
+</form>
+</center>
+
+</body>
+</html>
