@@ -51,11 +51,13 @@ function autoPost($rs) {
 
         // Add post
         $post = array(
-          'post_content' => $des,
-          'post_name' => $title,
-          'post_title' => $title,
-          'post_status' => 'publish',
-          'post_type' => 'post'
+            'post_content' => $des,
+            'post_name' => $title,
+            'post_title' => $title,
+            'post_status' => 'publish',
+            'post_type' => 'post',
+            'post_category'  => array(1), // change categorie_id for other(id).
+            'tags_input'     => array($rs['team1'], $rs['team2'])
         );
 
         $idPost = wp_insert_post($post, true);
